@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindarin Quiz Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sindarin Quiz Portal</h1>
+        <p>Test your knowledge of Sindarin and Tengwar!</p>
+    </header>
+
+    <main>
+        <section id="quiz-selection">
+            <h2>Choose Your Quiz</h2>
+            <button onclick="startQuiz('standard')">Standard Quiz (English to Sindarin)</button>
+        </section>
+
+        <section id="quiz-container" style="display: none;">
+            <h2 id="quiz-title"></h2>
+            <div id="question-box">
+                <p id="question-text"></p>
+                <div id="answer-options"></div>
+            </div>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        </section>
+
+        <section id="results-container" style="display: none;">
+            <h2>Your Results</h2>
+            <p id="score-text"></p>
+            <button onclick="restartQuiz()">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Resources: <a href="http://sindarinlessons.weebly.com" target="_blank">Sindarin Lessons</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
